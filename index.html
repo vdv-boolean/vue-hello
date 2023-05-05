@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello There</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <!-- Welcome Message-->
-    <h1>
-        Hello There
-    </h1>
-    <!-- Image -->
-    <img src="obi-wan.png" alt="">
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hello There</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="root">
+            <!-- Welcome Message-->
+            <h1>{{welcomeMessage}}</h1>
+            <!-- Image -->
+            <img :src="imageSrc" alt="">
+        </div>
+   </body>
 </html>
